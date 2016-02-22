@@ -1,8 +1,10 @@
 <div id="sidebar">
 <div class="sidebar-element">
 <h3>Our Team</h3>
-<p>This is an Our team section </p>
-
+<p>Our team members:</p>
+<p>1-Fatimah Alkhazl</p>
+<p>2-Noura Alotaibi</p>
+<p>3-Raveena Shrivastava</p>
 </div>
 
 <div class="sidebar-element">

@@ -5,6 +5,8 @@
 <div id="contentleft">
 <h1>Welcome to NearBy Shops</h1>
 <p>Welcome to NearBy Shops </p>
+<p>This is a project to make website that help anyone to find information about nearby shops, malls ,or markets. </p>
+<a href=""><img src="images/Under_Construction.jpg"/></a>
 </div><!--contentleft-->
 
 <?php include('sidebar.php'); ?>
