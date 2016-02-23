@@ -5,10 +5,56 @@
 <div id="contentleft">
 <h1>Contact Us</h1>
 <p>This is our contact page</p>
+<?php 
+$action=$_REQUEST['action']; 
+if ($action=="")    /* display the contact form */ 
+    { 
+    ?> 
+    <form  action="" method="POST" enctype="multipart/form-data"> 
+    <input type="hidden" name="action" value="submit"> 
+    Your name:<br> 
+    <input name="name" type="text" value="" size="30"/><br> 
+    Your email:<br> 
+    <input name="email" type="text" value="" size="30"/><br> 
+    Your message:<br> 
+    <textarea name="message" rows="7" cols="30"></textarea><br> 
+    <input type="submit" value="Send email"/> 
+    </form> 
+    <?php 
+    }  
+else                /* send the submitted data */ 
+    { 
+    $name=$_REQUEST['name']; 
+    $email=$_REQUEST['email']; 
+    $message=$_REQUEST['message']; 
+    if (($name=="")||($email=="")||($message=="")) 
+        { 
+        echo "All fields are required, please fill <a href=\"\">the form</a> again."; 
+        } 
+    else{ 
+        
+       
+    }
+    
+        $to="norah.b.alotaibi@gmail.com";
+        $subject="Message sent using your contact form"; 
+        
+        $name=$_POST['name'];
+        $email=$_POST['email'];
+        $message=$_POST['message'];
+        
+        $message="Hi my name is  $name : $message emmail $email";
+        $from="From: $name<$email>\r\nReturn-path: $email"; 
+    
+        mail($to, $subject, $message, $from); 
+        echo "Email sent!"; 
+         
+    }   
+?> 
 </div><!--contentleft-->
 
-<?php include('sidebar.php'); ?>
 
+<?php include('sidebar.php'); ?>
 </div><!--content-->
 </div><!--container-->
 
