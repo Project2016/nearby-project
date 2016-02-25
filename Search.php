@@ -1,54 +1,49 @@
 <?php include('header.php'); ?>
+
 <div id="container">
 <div id="content">
 <div id="contentleft">
-<html>
- <head>
- <title>Search Engine</title>
- </head><body><form action="search.php" method="get">
-
-Search Engine:<input type="text" name="value" placeholder="Search Anything here">
- <input type="submit" name="search" value="Search Now">
-
-</form>
- <hr>
+<h1>Search</h1>
 <?php
- @mysql_connect("localhost","root","");
- mysql_select_db("mysql");
-
-if(isset($_GET['search'])){
-
-$search_value = $_GET['value'];
-
-$query = "select * from sites where site_keywords like '%$search_value%'";
-
-$run = mysql_query($query);
-
-
-
-while($row = mysql_fetch_array($run)){
-
- $title = $row['site_title'];
- $link = $row['site_link'];
-     
- $desc = $row['site_desc'];
-
-echo "<h1>$title</h1><a href='$link'>$link</a><p>$desc</p>";
-
+$output=NULL;
+if(isset($_POST['submit']))
+{
+   $mysql= NEW mysqli("localhost", "root","root", "shopnearme", 8889);
+    $search1= $mysql->real_escape_string($_POST['name'] );
+    $search2=$mysql->real_escape_string($_POST['name2'] );
+   $result= $mysql->query("SELECT * FROM shop WHERE catename LIKE '%$search1%' AND zipcode LIKE '%$search2%'");
+   
+   if($result->num_rows > 0){
+       
+       while($rows=$result->fetch_assoc())
+{
+	$cata1=$rows['catename'];
+	$name=$rows['shopname'];
+        $address=$rows['address'];
+	$zipcode=$rows['zipcode'];
+        $phone=$rows['phone'];
+       $output .= "Catagory: $cata1 <br/> Shop Name: $name<br/> Address: $address <br/> Zip Code: $zipcode <br/> Phone Number: $phone<br/> <br/><hr>"; 
+   } 
+ 
 }
-
-}
-
+ else {
+   $out="No result found!"; 
+ }
+}  
 ?>
- </body>
- </html>
+
+<form method="POST" >
+Search Engine:<input type="text" name="name" placeholder="Search for restaurants,coffee shop,etc.">
+<input type="text" name="name2" placeholder="Near Zip code ">
+ <input type="submit" name="submit" value="Search Now">
+</form>
+<?php echo $output; ?> 
 </div><!--contentleft-->
-
 <?php include('sidebar.php'); ?>
-
 </div><!--content-->
 </div><!--container-->
 
 <?php include('footer.php'); ?>
+
 
 
