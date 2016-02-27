@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="header">
-<a href=""><img src="lego2.png" alt="Logo" /></a>
+<a href=""><img src="images/lego2.png" alt="Logo" /></a>
 </div><!--header-->
 
 <div id="navigation">
@@ -19,6 +19,7 @@
                 <li><a href="Search.php">Search</a></li>
 		<li><a href="about.php">About</a></li>
 		<li><a href="contact.php">Contact</a></li>
-                <li><a href="LogIn.php">LogIn</a></li>
+                <li><a href="login.php">LogIn</a></li>
+	        <li><a href="index.php">LogOut</a></li>
 	</ul>
 </div><!--navigation-->
