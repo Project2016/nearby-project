@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="header">
-<a href=""><img src="images/lego2.png" alt="Logo" /></a>
+<a href=""><img src="lego2.png" alt="Logo" /></a>
 </div><!--header-->
 
 <div id="navigation">
