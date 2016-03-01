@@ -3,7 +3,7 @@
 <h3>Our Team</h3>
 <p>Our team members:</p>
 <p>1-Fatimah Alkhazl</p>
-<p>2-Noura Alotaibi</p>
+<p>2-Norah Alotaibi</p>
 <p>3-Raveena Shrivastava</p>
 </div>
 
