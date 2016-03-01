@@ -8,11 +8,11 @@
 </div>
 
 <div class="sidebar-element">
-<h3>Unordered List</h3>
+<h3>Useful Website :</h3>
 	<ul>
-		<li><a href="">List Item #1</a></li>
-		<li><a href="">List Item #2</a></li>
-		<li><a href="">List Item #3</a></li>
+		<li><a href="http://www.w3schools.com/tags/att_img_align.asp">w3schools.com</a></li>
+		<li><a href="http://www.tutorialspoint.com/php/">Tutorials Point</a></li>
+		<li><a href="https://www.codecademy.com/learn/php">Codecademy</a></li>
 	</ul>
 </div>
 
