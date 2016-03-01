@@ -4,7 +4,7 @@
 <div id="content">
 <div id="contentleft">
 <h1>Contact Us</h1>
-<p>This is our contact page</p>
+<p></p>
 <?php 
 $action=$_REQUEST['action']; 
 if ($action=="")    /* display the contact form */ 
