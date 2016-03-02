@@ -38,7 +38,28 @@ if(isset($_POST['submit']))
 }
 }
 ?>
-
+<style> 
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #808080;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+</style>
 <form method="POST" action="Search.php?go" >
 Search Engine:<input type="text" name="name" placeholder="Search for restaurants,coffee shop,etc.">
 <input type="text" name="name2" placeholder="Near Zip code ">

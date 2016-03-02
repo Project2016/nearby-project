@@ -10,6 +10,17 @@ $action=$_REQUEST['action'];
 if ($action=="")    /* display the contact form */ 
     { 
     ?> 
+		<!DOCTYPE html>
+<html>
+<head >
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index,follow" />
+
+<title>Advanced Software engineering</title>
+<link rel="stylesheet" type="text/css" href="contact_s.css" />
+</head>
+<body>
     <form  action="" method="POST" enctype="multipart/form-data"> 
     <input type="hidden" name="action" value="submit"> 
     Your name:<br> 
@@ -20,6 +31,8 @@ if ($action=="")    /* display the contact form */
     <textarea name="message" rows="7" cols="30"></textarea><br> 
     <input type="submit" value="Send email"/> 
     </form> 
+	</body>
+	</html>
     <?php 
     }  
 else                /* send the submitted data */ 
