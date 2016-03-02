@@ -9,7 +9,7 @@ include_once 'dbconnect.php';
 
 if(isset($_SESSION['user'])!="")
 {
- header("Location: Search.php");
+ header("Location: home.php");
 }
 if(isset($_POST['btn-login']))
 {
@@ -20,7 +20,7 @@ if(isset($_POST['btn-login']))
  if($row['password']==md5($upass))
  {
   $_SESSION['user'] = $row['user_id'];
-  header("Location: home.php");
+  header("Location: Search.php");
  }
  else
  {
