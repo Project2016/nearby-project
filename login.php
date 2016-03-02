@@ -9,7 +9,7 @@ include_once 'dbconnect.php';
 
 if(isset($_SESSION['user'])!="")
 {
- header("Location: home.php");
+ header("Location: Search.php");
 }
 if(isset($_POST['btn-login']))
 {
