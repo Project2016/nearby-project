@@ -20,6 +20,6 @@
 		<li><a href="about.php">About</a></li>
 		<li><a href="contact.php">Contact</a></li>
                 <li><a href="login.php">LogIn</a></li>
-	        <li><a href="index.php">LogOut</a></li>
+	        <li><a href="test.php">LogOut</a></li>
 	</ul>
 </div><!--navigation-->

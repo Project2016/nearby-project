@@ -8,7 +8,7 @@ session_start();
 
 if(!isset($_SESSION['user']))
 {
- header("Location: index.php");
+ header("Location: test.php");
 }
 else if(isset($_SESSION['user'])!="")
 {
