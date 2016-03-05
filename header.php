@@ -13,7 +13,7 @@
 -<a href=""><img src="lego2.png" alt="Logo" /></a>
 </div><!--header-->
 
-<div id="navigation">
+<div id="cssmenu">
 	<ul>
 		<li><a href="home.php">Home</a></li>
 		    <li><a href="login.php">LogIn</a></li>
