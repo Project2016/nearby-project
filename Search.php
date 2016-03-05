@@ -67,7 +67,7 @@ Search Engine:<input type="text" name="name" placeholder="Search for restaurants
 </form>
 <?php echo $output; ?> 
 </div><!--contentleft-->
-<?php include('sidebar.php'); ?>
+<?php include('Ssidebar.php'); ?>
 </div><!--content-->
 </div><!--container-->
 
