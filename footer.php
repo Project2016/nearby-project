@@ -4,7 +4,7 @@
 		<li><a href="about.php">About</a></li>
 		<li><a href="contact.php">Contact</a></li>
 	</ul>
-<p>&copy;2016 NearbyshopsWebsite.com</p>
+<p>&copy;2016 NearbyshopsWebsite</p>
 </div><!--footer-->
 
 </body>
