@@ -29,7 +29,7 @@ if(isset($_POST['submit']))
  
 }
  else {
-   $output ="No Information about catagory found!"; 
+   $output ="No Information found about this catagory!"; 
  }
 } 
     else {

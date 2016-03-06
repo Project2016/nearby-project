@@ -15,7 +15,8 @@
 	</ul>
 	</P>
 	<p><img src="fatimah.jpg" alt="fatimah" width="150" height="150" align="left">
-	<img src="Reveena.jpg" alt="Raveena" width="150" height="150" align="middle">
+	<img src="Reveena.JPG" alt="Raveena" width="150" height="150" align="middle">
+        <img src="norah.png" alt="Norah" width="150" height="150" align="middle">
 	</p>
 </div><!--contentleft-->
 </div><!--content-->
