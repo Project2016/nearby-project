@@ -1,4 +1,4 @@
-
+<?php include('header.php'); ?>
 <?php
 session_start();
 if(isset($_SESSION['user'])!="")
@@ -27,12 +27,14 @@ if(isset($_POST['btn-signup']))
  }
 }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<div id="container">
+<div id="content">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login & Registration System</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="style_1.css" type="text/css" />
 
 </head>
 <body>
@@ -61,3 +63,6 @@ if(isset($_POST['btn-signup']))
 </center>
 </body>
 </html>
+</div><!--content-->
+</div><!--container-->
+<?php include('footer.php'); ?>
