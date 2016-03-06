@@ -29,7 +29,7 @@ $userRow=mysql_fetch_array($res);
     </div>
     <div id="right">
      <div id="content">
-      <h2>   Hi </h2> <?php echo $userRow['username']; ?>&nbsp; <h2>We wish you enjoy out Nearby shops Website </h2>
+      <h2>   Hi </h2> <?php echo $userRow['username']; ?>&nbsp; <font face="Times New Roman" color="Blue">We wish you enjoy our Nearby shops Website</font>
 		 <p><a href="logout.php?logout">Sign Out</a></p>
         </div>
     </div>
