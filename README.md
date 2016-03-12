@@ -8,3 +8,9 @@ Environment Setup:
 
 Server :
 Amazon Server Linux
+
+Database:
+phpmyadmin
+
+Note:
+Users can sreach for nearby shops,such as malls, restaurants ,coffee shop ....etc in several Zip Code such as 91768 ,91766, 90019 ....etc
